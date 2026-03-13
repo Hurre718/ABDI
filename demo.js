@@ -5,7 +5,7 @@
 {
     document.addEventListener("DOMContentLoaded", function() {
     // fetch() GET
-    fetch("https://BENW.pythonanywhere.com/animals")
+    fetch("https://benw.pythonanywhere.com/animals")
         .then(response => response.json())
         .then(data => {
             const list = document.getElementById("animalList");
@@ -20,7 +20,7 @@
 function getStudentInfo(){
     const inputName = document.getElementById("inputName").value;
     // fetch() POST
-    fetch("https://BENW.pythonanywhere.com/studentInfo",{
+    fetch("https://benw.pythonanywhere.com/studentInfo",{
         method: "POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({name:inputName})
